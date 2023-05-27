@@ -19,7 +19,7 @@ public class DoadorSangue {
 		System.out.print("Digite 'true' para a primeira doação de sangue ou 'false', caso contrário: ");
 		verdadeiro = scan.nextBoolean();
 		
-		if (idade >= 18 && idade <= 69 && verdadeiro == false) {
+		if ((idade >= 18 && idade < 60) || (idade >= 60 && idade <= 69 && verdadeiro == false)) {
 			System.out.println("\n"+ nome +" está apto(a) para doar sangue!");
 		} else {
 			System.out.println("\n"+ nome +" não está apto(a) para doar sangue!");
